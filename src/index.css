@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    border-radius: 8px;
+    box-shadow: 1px 2px 27px 2px grey;
+    width: 80%;
+    padding: 1em;
+    background-color: rgba(211, 211, 211, 0.473);
+}
+.right{
+    background-color: white;
+    width: 80%;
+    box-shadow: 1px 2px 27px 2px grey;
+    width: 80%;
+}
+input, textarea{
+    height: 2em;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 4px;
+}
+textarea{
+    height: 8em;
+}
+input:focus{
+    border: 2px solid gray;
+    outline: none;
+    transform: scale(1.01);
+}
+textarea:focus{
+    border: 2px solid gray;
+    outline: none;
+    transform: scale(1.01);
 }

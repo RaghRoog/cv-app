@@ -1,0 +1,16 @@
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #5A8F7B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.header > div{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 5%;
+}
